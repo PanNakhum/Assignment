@@ -71,15 +71,15 @@ First, Change a config file in `/include/CONFIG.h`
 ![Table](./timeseries_table.png)
 
 - unit test send data 10 times
-{"temperature1":23.344,"temperature2":29.966}✅
-{"temperature1":44.481,"temperature2":11.813}✅
-{"temperature1":28.565,"temperature2":32.885}✅
-{"temperature1":36.669,"temperature2":34.012}✅
-{"temperature1":35.999,"temperature2":38.169}✅
-{"temperature1":49.308,"temperature2":37.860}✅
-{"temperature1":40.793,"temperature2":8.345}✅
-{"temperature1":3.392,"temperature2":33.249}✅
-{"temperature1":30.014,"temperature2":7.627}✅
-{"temperature1":16.569,"temperature2":48.079}✅
+  {"temperature1":23.344,"temperature2":29.966}✅
+  {"temperature1":44.481,"temperature2":11.813}✅
+  {"temperature1":28.565,"temperature2":32.885}✅
+  {"temperature1":36.669,"temperature2":34.012}✅
+  {"temperature1":35.999,"temperature2":38.169}✅
+  {"temperature1":49.308,"temperature2":37.860}✅
+  {"temperature1":40.793,"temperature2":8.345}✅
+  {"temperature1":3.392,"temperature2":33.249}✅
+  {"temperature1":30.014,"temperature2":7.627}✅
+  {"temperature1":16.569,"temperature2":48.079}✅
 
 ThingsBoard can reciver data and show Chart on Dashboards✅
