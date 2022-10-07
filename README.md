@@ -63,3 +63,23 @@ First, Change a config file in `/include/CONFIG.h`
 
 - Try your best. If you cannot cover all tasks above, you can send your deliverable source code to us.
 - You can enhance your idea to improve application. Maybe it can increase your points.
+
+
+## Unit test
+
+![Unit test](./code_test.png)
+![Table](./dashboard.png)
+
+- unit test send data 10 times
+  - ✅{"temperature1":-41.867,"temperature2":-3.618}
+  - ✅{"temperature1":-2.766,"temperature2":1.513}
+  - ✅{"temperature1":36.281,"temperature2":22.632}
+  - ✅{"temperature1":9.282,"temperature2":33.240}
+  - ✅{"temperature1":-39.714,"temperature2":43.400}
+  - ✅{"temperature1":-11.672,"temperature2":-49.320}
+  - ✅{"temperature1":33.832,"temperature2":40.842}
+  - ✅{"temperature1":-11.834,"temperature2":-14.176}
+  - ✅{"temperature1":30.030,"temperature2":-24.893}
+  - ✅{"temperature1":23.079,"temperature2":-17.742}
+
+ThingsBoard can reciver data and show Chart on Dashboards✅
