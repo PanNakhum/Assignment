@@ -15,6 +15,13 @@ OneWire oneWire2(DS18B20_2);
 DallasTemperature sensors1(&oneWire1);
 DallasTemperature sensors2(&oneWire2);
 
+void sendData(float temp1,float temp2){
+  char jsonS[200];
+  sprintf(jsonS,"{\"temperature1\":%.3f,\"temperature2\":%.3f}",temp1,temp2);
+  Serial.println(jsonS);
+  mqtt.publish(THINGS_BOARD_TOPIC, jsonS);
+}
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600); // setup serial
@@ -61,11 +68,12 @@ void loop() {
   sensors2.requestTemperatures(); 
   float temperature2 = sensors2.getTempCByIndex(0);
   
-  char jsonS[200];
-  // sprintf(jsonS,"{\"temperature1\":%f,\"temperature2\":%f}",random(5000)/ 100.0,random(5000)/ 100.0);
-  sprintf(jsonS,"{\"temperature1\":%f,\"temperature2\":%f}",temperature1,temperature2);
-  Serial.println(jsonS);
-  mqtt.publish(THINGS_BOARD_TOPIC, jsonS);
+  sendData(random(5000)/ 100.0,random(5000)/ 100.0);
+  // For test
+  // for(int i=0;i<10;i++){
+  //     sendData(random(-50000,50000)/ 1000.0,random(-50000,50000)/ 1000.0);
+  //     delay(2000);
+  // }
   delay(2000);
 
 }
