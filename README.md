@@ -68,7 +68,7 @@ First, Change a config file in `/include/CONFIG.h`
 ## Unit test
 
 ![Unit test](./unit_test.png)
-![Table](./time_table.png)
+![Table](./timeseries_table.png)
 
 - unit test send data 10 times
 {"temperature1":23.344,"temperature2":29.966}✅
