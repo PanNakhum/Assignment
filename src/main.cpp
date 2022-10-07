@@ -62,8 +62,8 @@ void loop() {
   float temperature2 = sensors2.getTempCByIndex(0);
   
   char jsonS[200];
-  sprintf(jsonS,"{\"temperature1\":%f,\"temperature2\":%f}",random(5000)/ 100.0,random(5000)/ 100.0);
-  // sprintf(jsonS,"{\"temperature1\":%f,\"temperature2\":%f}",temperature1,temperature2);
+  // sprintf(jsonS,"{\"temperature1\":%f,\"temperature2\":%f}",random(5000)/ 100.0,random(5000)/ 100.0);
+  sprintf(jsonS,"{\"temperature1\":%f,\"temperature2\":%f}",temperature1,temperature2);
   Serial.println(jsonS);
   mqtt.publish(THINGS_BOARD_TOPIC, jsonS);
   delay(2000);
