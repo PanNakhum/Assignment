@@ -11,7 +11,6 @@ In the Thingsboard platform, Your device should present a telemetry on Dashboard
 - Thingsboard
   - URL: http://senseme.ddns.net:9000/login
   - MQTT Port: 1883
-  - Username/Password: assignment@mail.co/1q2w3e4r
 
 ![Schematic](./schematic.png)
 
