@@ -63,3 +63,8 @@ First, Change a config file in `/include/CONFIG.h`
 
 - Try your best. If you cannot cover all tasks above, you can send your deliverable source code to us.
 - You can enhance your idea to improve application. Maybe it can increase your points.
+
+
+## 🚀 Unit test
+
+![Unit test](./unit_test.png)
