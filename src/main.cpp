@@ -16,10 +16,10 @@ DallasTemperature sensors1(&oneWire1);
 DallasTemperature sensors2(&oneWire2);
 
 void sendData(float temp1,float temp2){ // Function send data publish data JSON form
-  char jsonS[200];
-  sprintf(jsonS,"{\"temperature1\":%.3f,\"temperature2\":%.3f}",temp1,temp2); // Add temp to JSON form
-  Serial.println(jsonS); // Print
-  mqtt.publish(THINGS_BOARD_TOPIC, jsonS); // Publish to topic
+  char jsonString[200];
+  sprintf(jsonString,"{\"temperature1\":%.3f,\"temperature2\":%.3f}",temp1,temp2); // Add temp to JSON form
+  Serial.println(jsonString); // Print
+  mqtt.publish(THINGS_BOARD_TOPIC, jsonString); // Publish to topic
 }
 
 void setup() {
